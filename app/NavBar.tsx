@@ -16,7 +16,7 @@ const NavBar = () => {
 
   return (
       <nav className="flex space-x-6 border-b mb-5 px-5 h-14 items-center">
-          <Link href="/" legacyBehavior><AiFillBug /></Link>
+          <Link href="/"><AiFillBug /></Link>
           <ul className="flex space-x-6">
               {links.map((link) => (
                   <li key={link.label}>
@@ -28,7 +28,7 @@ const NavBar = () => {
                               "text-zinc-500": currentPath !== link.href,
                               "hover:text-zinc-800 transition-colors": true,
                           })}
-                          legacyBehavior>
+                          >
                           {link.label}
                       </Link>
                   </li>
